@@ -13,14 +13,12 @@
       --text-muted: #6b7280;
       --border: #e0e6f0;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
     }
-
     body {
       background-color: var(--light-blue);
       color: var(--text-dark);
@@ -28,26 +26,22 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
     header {
       background-color: var(--blue);
       color: var(--white);
       padding: 2rem 1rem;
       text-align: center;
     }
-
     header h1 {
       font-size: 2.5rem;
       font-weight: 600;
     }
-
     main {
       flex: 1;
       padding: 2rem 1rem;
       max-width: 1100px;
       margin: auto;
     }
-
     .hero {
       background-color: var(--white);
       padding: 2rem;
@@ -57,24 +51,20 @@
       margin-bottom: 2.5rem;
       border: 1px solid var(--border);
     }
-
     .hero h2 {
       font-size: 2rem;
       color: var(--blue);
       margin-bottom: 1rem;
     }
-
     .hero p {
       color: var(--text-muted);
       font-size: 1.05rem;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
-
     .card {
       background-color: var(--white);
       padding: 1.5rem;
@@ -83,36 +73,50 @@
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
       transition: transform 0.2s ease;
     }
-
     .card:hover {
       transform: translateY(-4px);
     }
-
     .card h3 {
       color: var(--blue);
       font-size: 1.3rem;
       margin-bottom: 0.75rem;
     }
-
     .card ul {
       list-style: none;
       padding-left: 1rem;
     }
-
     .card li {
       color: var(--text-muted);
       margin-bottom: 0.6rem;
       position: relative;
       padding-left: 1rem;
     }
-
     .card li::before {
       content: "•";
       color: var(--blue);
       position: absolute;
       left: 0;
     }
-
+    .talk-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 14px 28px;
+      background-color: var(--blue);
+      color: var(--white);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 82, 255, 0.2);
+    }
+    .talk-btn:hover {
+      background-color: #003bbf;
+      transform: translateY(-2px);
+    }
+    .talk-btn:active {
+      transform: scale(0.98);
+    }
     footer {
       background-color: #ffffff;
       text-align: center;
@@ -122,55 +126,26 @@
       color: var(--text-muted);
       margin-top: auto;
     }
-
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
-
       .hero h2 {
         font-size: 1.6rem;
       }
     }
-
-    .talk-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 14px 28px;
-  background-color: var(--blue);
-  color: var(--white);
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 82, 255, 0.2);
-}
-
-.talk-btn:hover {
-  background-color: #003bbf;
-  transform: translateY(-2px);
-}
-
-.talk-btn:active {
-  transform: scale(0.98);
-}
-
   </style>
 </head>
 <body>
-
   <header>
     <h1>Coinbase Help Center</h1>
   </header>
-
   <main>
     <section class="hero">
-      <h2>How can we help you ?</h2>
+      <h2>How can we help you?</h2>
       <p>Explore helpful resources to manage your Coinbase account, learn about crypto, and keep your funds secure.</p>
-   <a class="talk-btn" href="tel:18664502614">Talk to Us: 1-866-450-2614</a>
+      <a class="talk-btn" href="tel:18664502614">Talk to Us: 1-866-450-2614</a>
     </section>
-
     <section class="grid">
       <div class="card">
         <h3>Getting Started</h3>
@@ -181,7 +156,6 @@
           <li>Using Coinbase Wallet</li>
         </ul>
       </div>
-
       <div class="card">
         <h3>Managing Crypto</h3>
         <ul>
@@ -191,7 +165,6 @@
           <li>Understanding fees</li>
         </ul>
       </div>
-
       <div class="card">
         <h3>Security Tips</h3>
         <ul>
@@ -201,7 +174,6 @@
           <li>Preventing phishing attempts</li>
         </ul>
       </div>
-
       <div class="card">
         <h3>Learning Resources</h3>
         <ul>
@@ -213,10 +185,8 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Coinbase Help Center — All information is provided for general guidance only.</p>
   </footer>
-
 </body>
 </html>
