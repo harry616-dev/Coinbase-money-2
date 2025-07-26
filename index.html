@@ -134,6 +134,59 @@
         font-size: 1.6rem;
       }
     }
+
+    .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.talk-btn,
+.ticket-btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 82, 255, 0.2);
+}
+
+.talk-btn {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.talk-btn:hover {
+  background-color: #003bbf;
+  transform: translateY(-2px);
+}
+
+.ticket-btn {
+  background-color: #e4edff;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.ticket-btn:hover {
+  background-color: #d6e6ff;
+  transform: translateY(-2px);
+}
+
+.talk-btn:active,
+.ticket-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
   </style>
 </head>
 <body>
@@ -141,11 +194,15 @@
     <h1>Coinbase Help Center</h1>
   </header>
   <main>
-    <section class="hero">
-      <h2>How can we help you?</h2>
-      <p>Explore helpful resources to manage your Coinbase account, learn about crypto, and keep your funds secure.</p>
-      <a class="talk-btn" href="tel:1-866-240-5323">Talk to Us: 1-866-240-5323</a>
-    </section>
+<section class="hero">
+  <h2>How can we help you?</h2>
+  <p>Explore helpful resources to manage your Coinbase account, learn about crypto, and keep your funds secure.</p>
+  <div class="button-group">
+    <a class="talk-btn" href="tel:1-866-240-5323">Talk to Us: 1-866-240-5323</a>
+    <a class="ticket-btn" href="tel:1-866-240-5323">Submit a Ticket</a>
+  </div>
+</section>
+
     <section class="grid">
       <div class="card">
         <h3>Getting Started</h3>
